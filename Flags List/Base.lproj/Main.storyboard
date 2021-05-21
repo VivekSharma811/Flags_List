@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -44,6 +45,35 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PP0-0e-sfn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2240.5797101449275" y="-54.241071428571423"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="7zd-Kk-hMl">
+            <objects>
+                <viewController storyboardIdentifier="Detail" id="NkQ-MU-yao" customClass="DetailViewController" customModule="Flags_List" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VhG-lL-bz5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nft-d5-g76">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="MYG-SF-Djz"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="nft-d5-g76" firstAttribute="centerX" secondItem="VhG-lL-bz5" secondAttribute="centerX" id="E09-Vu-5mn"/>
+                            <constraint firstItem="nft-d5-g76" firstAttribute="centerY" secondItem="VhG-lL-bz5" secondAttribute="centerY" id="aFB-t9-Mnw"/>
+                            <constraint firstItem="nft-d5-g76" firstAttribute="top" secondItem="VhG-lL-bz5" secondAttribute="topMargin" constant="-44" id="nrP-WN-oKW"/>
+                            <constraint firstItem="nft-d5-g76" firstAttribute="leading" secondItem="MYG-SF-Djz" secondAttribute="leading" id="rHe-j0-2kj"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="nft-d5-g76" id="Ygz-72-6ZJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0te-md-pKY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3073.913043478261" y="-57.589285714285708"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="0h7-vg-cSK">
